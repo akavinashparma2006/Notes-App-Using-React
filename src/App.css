@@ -1,0 +1,48 @@
+nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aquamarine;
+  height:50px;
+}
+nav ul li{
+  list-style-type: none;
+  gap: 23px;
+  padding: 10px;
+  
+
+}
+
+nav ul{
+  display: flex;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+label{
+  display: block;
+}
+
+
+form{
+  text-align: center;
+}
+
+h1,h2{
+  text-align: center;
+}
+
+input[type='text']{
+  width: 30vw;
+  height:44px;
+
+}
+
+textarea{
+  width: 30vw;
+  height: 122px;
+  
+}
