@@ -1,8 +1,8 @@
 
 import './App.css'
-import Navabar from '../../components/Navabar'
+import Navabar from '../components/Navabar.jsx'
 import { useState } from 'react'
-import Card from '../../components/card'
+import Card from '../components/card'
 
 function App() {
   const [Notes, setNotes] = useState([])
@@ -41,11 +41,13 @@ function App() {
           <button>Submit</button>
         </form>
       </main>
-      <section>
+      <section className='noteSection'>
         <h2>Your Notes</h2>
+        <div className='container'>
         {Notes && Notes.map(note => {
           return <Card title={note.title} desc={note.desc}/>
         })}
+        </div>
       </section>
     </>
   )
