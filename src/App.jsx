@@ -2,35 +2,28 @@
 import './App.css'
 import Navabar from '../components/Navabar.jsx'
 import { useState } from 'react'
-
 import Card from '../components/card.jsx'
 
 
-function App() {
 
+function App() {
   const [Notes, setNotes] = useState(() => {
     const localNotes = localStorage.getItem('notes')
     return localNotes ? JSON.parse(localNotes) : []
   })
 
-
-  const [currentNote, setcurrentNote] = useState({ title: "", desc: "" })
-
-
-
-
-
-  
+  const [currentNote, setcurrentNote] = useState({ title: '', desc: '' })
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
     const updatedNotes = [...Notes, currentNote]
     setNotes(updatedNotes)
-    setcurrentNote({ title: "", desc: "" })
+    setcurrentNote({ title: '', desc: '' })
 
-    localStorage.setItem("notes", JSON.stringify(updatedNotes))
+    localStorage.setItem('notes', JSON.stringify(updatedNotes))
   }
+
 
 
 
@@ -48,10 +41,12 @@ function App() {
 
   return (
     <>
-      <Navabar/>
+      <Navabar />
+
       <main>
         <h1>Create your note</h1>
-        <form  onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
+
           <div>
             <label htmlFor='title'>Title</label>
 
