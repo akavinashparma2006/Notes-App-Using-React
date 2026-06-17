@@ -2,7 +2,7 @@
 import './App.css'
 import Navabar from '../components/Navabar.jsx'
 import { useState } from 'react'
-import Card from '../components/card'
+import Card from '../components/card.jsx'
 
 function App() {
   const [Notes, setNotes] = useState([])

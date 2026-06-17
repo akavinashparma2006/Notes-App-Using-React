@@ -50,8 +50,8 @@ textarea{
 .card{
   width: 233px;
   height: 233px;
-  background-color: rgb(70, 154, 238);
-  color: white;
+  background-color: rgb(11, 78, 145);
+  color: rgb(232, 7, 7);
   font-weight: bold;
   padding: 12px;
   margin:12px;
@@ -62,6 +62,7 @@ textarea{
 .card .title{
   text-align: center;
   font-size: 22px;
+  color: aqua;
 
 }
 
