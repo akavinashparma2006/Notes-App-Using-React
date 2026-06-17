@@ -2,7 +2,7 @@ nav{
   display:flex;
   justify-content: space-around;
   align-items: center;
-  background-color: aquamarine;
+  background-color: rgb(56, 223, 201);
   height:50px;
 }
 nav ul li{
@@ -50,19 +50,20 @@ textarea{
 .card{
   width: 233px;
   height: 233px;
-  background-color: rgb(11, 78, 145);
-  color: rgb(232, 7, 7);
+  background-color: rgb(67, 144, 221);
+  color: rgb(74, 45, 170);
   font-weight: bold;
   padding: 12px;
   margin:12px;
   border-radius: 12px;
+  position: relative;
 }
 
 
 .card .title{
   text-align: center;
   font-size: 22px;
-  color: aqua;
+  color: rgb(0, 0, 0);
 
 }
 
@@ -78,4 +79,10 @@ textarea{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.del{
+  position: absolute;
+  right:5px;
+  cursor: pointer;
 }
